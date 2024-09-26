@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Livros</title>
+
+    <style>
+        html, body {
+            font-family: Tahoma;
+            background-color: maroon;
+            text-align: center;
+        }
+
+        main {
+            width: 70%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+        }
+        
+        main > h1 {
+            font-style: italic;
+            color: mistyrose;
+            border: 2px;
+            border-style: dotted;
+            border-color: mistyrose;
+        }
+        
+        main > p {
+            color: whitesmoke;
+            background: repeating-linear-gradient(90deg, #984442, #984442 40px, #8F3D3F 40px, #8F3D3F 70px);
+            background-size: 70px 70px;
+            padding: 2px;
+            font-weight: bold;
+        }
+        
+        table {
+            border-collapse: collapse;
+            margin: auto;
+        }
+        
+        img {
+            width: 150px;
+            border-style: dotted;
+            border-color: indianred;
+            padding: 2px;
+        }
+        
+        aside {
+            width: 30%;
+            background-image: url('Capas/vinho.jpg');
+            background-size: cover;
+            background-position: right center;
+            background-repeat: no-repeat;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+        }
+        
+        aside > h1, h2 {
+            color: darkred;
+            background-image: url('Capas/fundo.jpg');
+        }
+        
+        ol {
+            color: lightgray;
+            font-size: 10pt;
+            font-weight: bold;
+            line-height: 35px;
+            text-align: left;
+            counter-reset: item;
+        }
+        
+        ol li {
+            list-style: none;
+            counter-increment: item;
+            list-style-image: url('Capas/check.png');
+        }
+        
+        span {
+            text-decoration: underline solid;
+            color: gold;
+        }
+        
+        
+        img:hover {
+            transform: rotate(-5deg);
+            border: 5px double gold;
+        }
+    
+        aside > h2:hover {
+            color: indianred;
+        }
+
+        li:hover {
+            background-color: crimson;
+            color: lightpink;
+            border-color: lightpink;
+        }
+
+        main > h1:hover {
+            background-color: crimson;
+            color: lightpink;
+            border-color: lightpink;
+        }
+        </style>
+
+</head>
+<body>
+
+    <main>
+        <h1>LIVROS MAIS VENDIDOS NA SEMANA</h1>
+        <p>Ficção:</p>
+        <table>
+            <tr>
+                <td><img src="Capas/estrelas.jpg" alt="capa do livro A Culpa é das Estrelas"></td>
+                <td><img src="Capas/alasca.jpg" alt="capa do livro Quem é Você, Alasca?"></td>
+                <td><img src="Capas/divergente.jpg" alt="capa do livro Divergente"></td>
+                <td><img src="Capas/convergente.jpg" alt="capa do livro Covergente"></td>
+                <td><img src="Capas/menina.jpg" alt="capa do livro A Menina que Roubava Livros"></td>
+            </tr>
+        </table>
+        <p>Não Ficção:</p>
+        <table>
+            <tr>
+                <td><img src="Capas/lufi.jpg" alt="capa do livro O Tempo É um Rio que Corre"></td>
+                <td><img src="Capas/assassinato.jpg" alt="capa do livro Assassinato de Reputações"></td>
+                <td><img src="Capas/sonho.jpg" alt="capa do livro Sonho Grande"></td>
+                <td><img src="Capas/apagar.jpg" alt="capa do livro A Estrela que Nunca vai se Apagar"></td>
+                <td><img src="Capas/1889.jpg" alt="capa do livro 1889"></td>
+            </tr>
+        </table>
+    </main>
+    <aside>
+        <h1>Categorias</h1>
+        <h2>Ficção:</h2>
+        <ol>
+            <li><span>1º:</span> A Culpa é das Estrelas</li>
+            <li><span>2º:</span> Quem é você, Alasca?</li>
+            <li><span>3º:</span> Divergente</li>
+            <li><span>4º:</span> Convergente</li>
+            <li><span>5º:</span> A Menina que Roubava Livros</li>
+        </ol>
+        <h2>Não Ficção:</h2>
+        <ol>
+            <li><span>1º:</span> O Tempo É um Rio que Corre</li>
+            <li><span>2º:</span> Assassinato de Reputações</li>
+            <li><span>3º:</span> Sonho Grande</li>
+            <li><span>4º:</span> A Estrela que Nunca Vai se Apagar</li>
+            <li><span>5º:</span> 1889</li>
+        </ol>
+    </aside>
+    
+</body>
+</html>
